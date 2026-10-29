@@ -1644,12 +1644,13 @@ ol {
 }
 .cenarios {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 10px;
 }
 .cenario {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 10px 12px;
   align-items: center;
   justify-content: space-between;
   padding: 12px 14px;
@@ -1660,6 +1661,7 @@ ol {
 .cenario-txt {
   display: grid;
   gap: 3px;
+  flex: 1 1 190px;
 }
 .cenario-txt strong {
   display: flex;
@@ -2724,7 +2726,7 @@ ol {
 .ativa-acao,
 .ativa-codigo {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 .ativa-acao p,
 .ativa-codigo p {
@@ -2739,7 +2741,7 @@ ol {
 .codigo-caixas span {
   display: grid;
   place-items: center;
-  height: 50px;
+  height: 42px;
   border-radius: 12px;
   background: #fff;
   border: 2px solid var(--line);
@@ -2761,7 +2763,7 @@ ol {
   gap: 6px;
 }
 .teclado button {
-  height: 44px;
+  height: 37px;
   border-radius: 12px;
   background: #fff;
   border: 1px solid var(--line);
